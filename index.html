@@ -10,7 +10,7 @@
     <!--black, white, league, beige, sky, night, serif, simple, solarized, blood, moon-->
     <link rel="stylesheet" href="dist/theme/dark.css">
     <!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
     <!----------------------misc---------------------->
     <title>LBM</title>
   </head>
@@ -31,88 +31,88 @@
         
         <!----------------------Intro---------------------->
         <section>
-          <h2>Petite introduction</h2>  
+          <h2>Mécanique des fluides</h2>  
           <section>
           </section>
           <section data-auto-animate>
             <h3>Navier-Stokes</h3>
             <div class="r-hstack justify-center">
               <div data-id="NS" style="margin: 20px; font-size: 1em;">
-	  			      \[
-	  			        \begin{align*}
-	  			          \frac{\partial \vec{u}}{\partial t} + (\vec{u} \cdot \vec{\nabla})\vec{u} &= - \dfrac{\vec{\nabla} P}{\rho} + \nu \Delta \vec{u} + \dfrac{\vec{F}_\text{ext}}{\rho}\\
-	  			          \vec{\nabla} \cdot \vec{u} &= 0
-	  			        \end{align*}
-	  				    \]
-	  				   </div>
-	  				 </div>
+                \[
+                  \begin{align*}
+                    \frac{\partial \vec{u}}{\partial t} + (\vec{u} \cdot \vec{\nabla})\vec{u} &= - \dfrac{\vec{\nabla} P}{\rho} + \nu \Delta \vec{u} + \dfrac{\vec{F}_\text{ext}}{\rho}\\
+                    \vec{\nabla} \cdot \vec{u} &= 0
+                  \end{align*}
+                \]
+               </div>
+             </div>
           </section>
           <section data-auto-animate>
             <h3>Navier-Stokes</h3>
             <div class="r-hstack justify-center">
               <div data-id="NS" style="margin: 20px; font-size: 0.8em;">
-	  			      \[
-	  			        \begin{align*}
-	  			          \frac{\partial \vec{u}}{\partial t} + (\vec{u} \cdot \vec{\nabla})\vec{u} &= - \dfrac{\vec{\nabla} P}{\rho} + \nu \Delta \vec{u} + \dfrac{\vec{F}_\text{ext}}{\rho}\\
-	  			          \vec{\nabla} \cdot \vec{u} &= 0
-	  			        \end{align*}
-	  				    \]
-	  				  </div>
-	  				  <div style="margin: 20px; font-size: 0.7em;">
+                \[
+                  \begin{align*}
+                    \frac{\partial \vec{u}}{\partial t} + (\vec{u} \cdot \vec{\nabla})\vec{u} &= - \dfrac{\vec{\nabla} P}{\rho} + \nu \Delta \vec{u} + \dfrac{\vec{F}_\text{ext}}{\rho}\\
+                    \vec{\nabla} \cdot \vec{u} &= 0
+                  \end{align*}
+                \]
+              </div>
+              <div style="margin: 20px; font-size: 0.7em;">
                 <ul>
                   <li>Vitesse macroscopique $\vec{u}$</li>
                   <li>Viscosité cinématique $\nu$</li>
                   <li>Pression $P$</li>
                   <li>Masse volumique $\rho$</li>
                 </ul>
-	  	        </div>
-	  		    </div>
+              </div>
+            </div>
           </section>
           <section data-auto-animate>
             <h3>Équation de Boltzman</h3>
             <div class="r-hstack justify-center">
               <div data-id="Bm" style="margin: 20px; font-size: 1.2em;">
               \[
-	    			    \frac{\partial f}{\partial t} + \vec{v} \cdot \vec{\nabla}_{\vec{r}} f + \frac{\vec{F}_\text{ext}}{\rho} \cdot \vec{\nabla}_{\vec{v}} f = C(f)
-	    				\]
-	    				</div>
-	    			</div>
+                \frac{\partial f}{\partial t} + \vec{v} \cdot \vec{\nabla}_{\vec{r}} f + \frac{\vec{F}_\text{ext}}{\rho} \cdot \vec{\nabla}_{\vec{v}} f = C(f)
+              \]
+              </div>
+            </div>
           </section>
           <section data-auto-animate>
             <h3>Équation de Boltzman</h3>
             <div class="r-hstack justify-center">
               <div data-id="Bm" style="margin: 10px; font-size: 0.8em;">
               \[
-	    			    \frac{\partial f}{\partial t} + \vec{v} \cdot \vec{\nabla}_{\vec{r}} f + \frac{\vec{F}_\text{ext}}{\rho} \cdot \vec{\nabla}_{\vec{v}} f = C(f)
-	    				\]
-	    				</div>
-	    				<div style="margin: 10px; font-size: 0.7em;">
+                \frac{\partial f}{\partial t} + \vec{v} \cdot \vec{\nabla}_{\vec{r}} f + \frac{\vec{F}_\text{ext}}{\rho} \cdot \vec{\nabla}_{\vec{v}} f = C(f)
+              \]
+              </div>
+              <div style="margin: 10px; font-size: 0.7em;">
                 <ul>
                   <li>Distributions des particules $f(\vec{r},\vec{v},t)$</li>
                   <li>Vitesses des particules $\vec{v}$</li>
                   <li data-id="op">Opérateur collision $C(f)$</li>
                 </ul>
               </div>
-	    			</div>
+            </div>
           </section>
           <section data-auto-animate>
             <h3>Équation de Boltzman</h3>
             <div class="r-hstack justify-center">
               <div data-id="Bm" style="margin: 20px; font-size: 0.7em;">
               \[
-	    			    \frac{\partial f}{\partial t} + \vec{v} \cdot \vec{\nabla}_{\vec{r}} f + \frac{\vec{F}_\text{ext}}{\rho} \cdot \vec{\nabla}_{\vec{v}} f = C(f)
-	    				\]
-	    				</div>
-	    				<div style="margin: 20px; font-size: 0.65em;">
+                \frac{\partial f}{\partial t} + \vec{v} \cdot \vec{\nabla}_{\vec{r}} f + \frac{\vec{F}_\text{ext}}{\rho} \cdot \vec{\nabla}_{\vec{v}} f = C(f)
+              \]
+              </div>
+              <div style="margin: 20px; font-size: 0.65em;">
                 <ul>
                   <li>Distributions des particules $f(\vec{r},\vec{v},t)$</li>
                   <li>Vitesses des particules $\vec{v}$</li>
                   <li data-id="op">Opérateur collision $C(f)$</li>
                 </ul>
               </div>
-	    			</div>
-	    			<h5>Opérateur BGK :</h5>
-	  			  $$C(f) := - \frac{1}{\tau} (f - f^{\text{eq}})$$
+            </div>
+            <h5>Opérateur BGK :</h5>
+            $$C(f) := - \frac{1}{\tau} (f - f^{\text{eq}})$$
           </section>
         </section>
         
@@ -175,7 +175,7 @@
             </video>
           </section>
           <section>
-            <h3>Écoulement de géométrie complexe</h3>
+            <h3>Écoulement en géométrie complexe</h3>
             <video loop="true" muted="true" width=55% controls>
               <source src="assets/complexflow.mp4" type="video/mp4">
             </video>
@@ -192,6 +192,12 @@
               <source src="assets/circle_chaosout.mp4" type="video/mp4">
             </video>
           </section>
+        </section>
+        <!-------------------------Remerciements--------------------------->
+        <section data-background-video="assets/chaos.mp4" data-background-video-loop="loop">
+          <h1 style="color:#575757; padding: 0cm 0 0.7cm 0" class="r-fit-text">
+            Merci de votre attention
+          </h1>
         </section>
         <!-------------------Algorithme & implémentation------------------->
         <section>
@@ -360,10 +366,10 @@ End Subroutine
             </code></pre>
             On imposes les condition aux limites de Dirichlet
           </section>
-                    <section data-auto-animate>
+          <section data-auto-animate>
             <h4>Collisions avec les objets</h4>
             <pre style="max-height: 400px;" data-id="code"><code  style="max-height: 400px;" class="fortran" data-trim data-line-numbers="|12-29|">
-!!==============================================================================
+!===============================================================================
 !                           Boundary with collision
 !===============================================================================
 Subroutine Bound
@@ -398,6 +404,218 @@ End Subroutine
             </code></pre>
             L'implémentation est directe et consite a échanger les valeurs de $f_i$ pour les $\vec{e}_i$ oposées 
           </section>
+          <section data-auto-animate>
+            <h4>grandeurs macroscopiques</h4>
+            <pre style="max-height: 400px;" data-id="code"><code  style="max-height: 400px;" class="fortran" data-trim data-line-numbers="|13-32|">
+!===============================================================================
+!                               Compute Macro
+!===============================================================================
+Subroutine CMacro
+  Use Var, Only: F, Rho, U, Usqr
+  Use Dconst, Only: L, H
+  Use Lconst, Only: Q, e
+  Implicit None
+  Integer(4) :: i, j
+  Integer(1) :: k
+  Real(8) :: r
+   
+  Do j = 1, H
+    Do i = 1, L
+      Rho(i,j) = 0
+      U(1,i,j) = 0
+      U(2,i,j) = 0
+      Do k = 1, Q
+        Rho(i,j) = Rho(i,j) + F(k,i,j)
+        If(e(k,1) /= 0) Then
+          U(1,i,j) = U(1,i,j) + F(k,i,j)*e(k,1)
+        End If
+        If(e(k,2) /= 0) Then
+          U(2,i,j) = U(2,i,j) + F(k,i,j)*e(k,2)
+        End If
+      End Do
+      r = 1d0/Rho(i,j)
+      U(1,i,j)  = U(1,i,j)*r
+      U(2,i,j)  = U(2,i,j)*r
+      Usqr(i,j) = U(1,i,j) * U(1,i,j) + U(2,i,j) * U(2,i,j)
+    End Do
+  End Do
+End Subroutine
+            </code></pre>
+            <p style="font-size: 0.65em;">
+            $\rho = \sum_{i=1}^9 f_i ~~~$
+            </p>
+            <p style="font-size: 0.65em;">
+            $\rho\vec{u} = \sum_{i=1}^9 f_i \cdot \vec{e}_i$
+            </p>
+          </section>
+          <section data-auto-animate>
+            <h4>calcul de $f^{\text{eq}}$</h4>
+            <pre style="max-height: 400px;" data-id="code"><code  style="max-height: 400px;" class="fortran" data-trim data-line-numbers="|14-27|">
+!===============================================================================
+!                               Compute Feq
+!===============================================================================
+Subroutine CFeq
+  Use Var, Only: Feq, U, Usqr, Rho
+  Use Lconst, Only: Q, e, w
+  Use Dconst, Only: L, H
+  Use Cconst, Only: ics2
+  Implicit None
+  Real(8) :: Ue
+  Integer(4) :: i, j
+  Integer(1) :: k
+  
+  Do j = 1, H
+    Do i = 1, L
+      Feq(1,i,j) = w(1)*Rho(i,j)*(1d0-(.5d0*Usqr(i,j)*ics2))
+    End Do
+  End Do
+    
+  Do j = 1, H
+    Do i = 1, L
+      Do k = 2, Q
+        Ue = e(k,1)*U(1,i,j)+e(k,2)*U(2,i,j)
+        Feq(k,i,j) = w(k)*Rho(i,j)*(1d0+(Ue+.5d0*((Ue*Ue*ics2)-Usqr(i,j)))*ics2)
+      End Do
+    End Do
+  End Do
+End Subroutine
+            </code></pre>
+            <p style="font-size: 0.65em;">
+            $$f^{\text{eq}}_i = w_i \rho\left(1 + \frac{\vec{u}\cdot{}\vec{e}_i}{c_s^2} + \frac{(\vec{u}\cdot{}\vec{e}_i)^2}{2c_s^4} - \frac{\vec{u}\cdot{}\vec{u}}{2c_s^2}\right)$$
+            </p>
+          </section>
+          <section data-auto-animate>
+            <h4>Opérateur collision</h4>
+            <pre style="max-height: 400px;" data-id="code"><code  style="max-height: 400px;" class="fortran" data-trim data-line-numbers="|13-19|">
+!===============================================================================
+!                             Collide Step
+!===============================================================================
+Subroutine Collide
+  Use Var, Only: F, Feq
+  Use Cconst, Only: itau, mitau
+  Use Dconst, Only: L, H
+  Use Lconst, Only: Q
+  Implicit None
+  Integer(4) :: i, j
+  Integer(1) :: k
+  
+  Do j = 1, H
+    Do i = 1, L
+      Do k = 1, Q
+        F(k,i,j)= mitau*F(k,i,j) + itau*Feq(k,i,j)
+      End Do
+    End Do
+  End Do
+End Subroutine
+            </code></pre>
+            <p style="font-size: 0.8em;">
+            $$f_i = \left(1 - \dfrac{1}{\tau}\right) \cdot f_i + \dfrac{1}{\tau} \cdot f^{\text{eq}}_i$$
+            </p>
+          </section>
+          <section data-auto-animate>
+            <h4>Diffusion</h4>
+            <pre style="max-height: 400px;" data-id="code"><code  style="max-height: 400px;" class="fortran" data-trim data-line-numbers="|13-34|">
+!===============================================================================
+!                             Stream Step
+!===============================================================================
+Subroutine Stream
+  Use Lconst, Only: Q, ed
+  Use Dconst, Only: L, H
+  Use Var, Only: F
+  Implicit None
+  Integer(1) :: k, e
+  Integer(4) :: i, j
+  Real(8) :: fs
+  
+  Do k = 2, Q
+    If (ed(k,1) /= 0) Then
+      e = (ed(k,1)+1)*5d-1
+      Do j = 1, H
+        fs = F(k,1+e*(L-1),j)
+        Do i = 2+e*(L-3), L-e*(L-1), -ed(k,1) 
+          F(k,i,j) = F(k,i-ed(k,1),j)
+        End Do
+        F(k,L-e*(L-1),j) = fs
+      End Do
+    End If
+    If (ed(k,2) /= 0) Then
+      e = (ed(k,2)+1)*5d-1
+      Do i = 1, L
+        fs = F(k,i,1+e*(H-1))
+        Do j = 2+e*(H-3), H-e*(H-1), -ed(k,2)
+          F(k,i,j) = F(k,i,j-ed(k,2))
+        End Do
+        F(k,i,H-e*(H-1)) = fs
+      End Do
+    End If
+  End Do
+  
+End Subroutine
+            </code></pre>
+            <p style="font-size: 0.8em;">
+            $$f_i(t+\delta_t, \vec{r}+\delta_t\vec{e}_i) = f_i(t, \vec{r})$$
+            </p>
+          </section>
+          <section data-auto-animate>
+            <h4>Création du profil</h4>
+            <pre style="max-height: 400px;" data-id="code"><code  style="max-height: 400px;" class="fortran" data-trim data-line-numbers="|13-20|22-50|">
+!===============================================================================
+!              Convert the image of the object from svg to pgm
+!     and import it into a matrix with 1 and 0 (1 stand for the object)
+!===============================================================================
+Subroutine Object
+  Use Dconst, Only: L, H
+  Use Var, Only: Obj, s
+  Implicit None
+  Character(len=210) :: command             ! The bash command
+  Integer(1) :: Ob(L,H)
+  Integer(4) :: i, j                        ! Itterator
+  
+  command = '("rsvg-convert -w ",i0," -h ",i0," objet.svg -o objet.png")'
+  Write(command, command) L, H
+  
+  Call execute_command_line(command, wait=.true.)
+  
+  command = "convert -compress none objet.png -alpha extract -threshold 0%&
+  & -negate objet.pbm"
+  Call execute_command_line(command, wait=.true.)
+  
+  Open(10, file = 'objet.pbm', action='read')
+
+  Read(10, *) command
+  Read(10, *) command
+
+  Do i=1, H
+    Read(10, *) Ob(:, i)
+  End Do
+  Close(10)
+    
+  s = 0
+  Do j=1, H
+    Do i=1, l
+      s = s + Ob(i, j)
+    End Do
+  End Do
+  
+  Allocate(Obj(2,s))
+  
+  s = 0
+  Do j=1, H
+    Do i=1, l
+      If (Ob(i, j) == 1) Then
+        s = s + 1
+        Obj(1,s) = i
+        Obj(2,s) = j
+      End If
+    End Do
+  End Do
+  
+End Subroutine
+            </code></pre>
+            <p style="font-size: 0.8em;">
+            Convertie une image en SVG vers PGM et lis la valeurs des pixels.
+            </p>
+          </section>
         </section>
        
       </div>
@@ -405,7 +623,7 @@ End Subroutine
     <!----------------------scripts---------------------->
     <script src="dist/reveal.js"></script>
     <script src="plugin/math/math.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
     <script>
       Reveal.initialize({
         controlsTutorial: false,
